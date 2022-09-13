@@ -16,6 +16,7 @@ function isAnagrama (word1, word2){
 
         for (let letter1 of word1Split){
             const anagrama = word2Split.some((letter2) => letter1 === letter2);
+            console.log(anagrama)
             if (anagrama == false){
                 return false;
             }
@@ -32,4 +33,5 @@ isAnagrama('amor', 'amor');
 // false
 isAnagrama('eva', 'ave');
 // true
-
+isAnagrama('hola', 'roma');
+// false
