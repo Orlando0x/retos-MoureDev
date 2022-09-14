@@ -6,8 +6,11 @@
 function convBinario (entero){
     const array = [];
     for (let num = entero; num > 0; num = Math.floor(num/2)) {
-        console.log(num);
         array.unshift(num % 2);
-        console.log(array)
     }
+    const numBinario = array.join('');
+    return Number(numBinario);
 }
+
+convBinario(29);
+// 11101
