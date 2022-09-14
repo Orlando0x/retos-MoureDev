@@ -190,12 +190,15 @@ function morse(text){
             case ' ':
                 array.push(' ')
                 break;
-            
         }
     });
 
     const morse = array.join('').trim();
     console.log(morse);
+    return morse;
 }
 
 morse('Orlando');
+// --- .-. .-.. .- -. -·· ---
+morse('SOS');
+// ... --- ...
